@@ -35,7 +35,7 @@ export class Dashboard extends React.Component {
       return <Redirect to="/onboarding" />;
     } else {
       return (
-        <div className="dashboard">
+        <section className="dashboard">
           <Accordion accordion={false}>
             <Link className="dash-item create-event-link" to='/events/create-event' ><button> + Create New Event</button></Link>
             <AccordionItem expanded="true">
@@ -60,7 +60,7 @@ export class Dashboard extends React.Component {
             </AccordionItem>
           </Accordion>
 
-        </div>
+        </section>
       );
     }
   }
